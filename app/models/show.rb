@@ -1,8 +1,6 @@
 
 class Show < ActiveRecord::Base
   
-  attr_accessor :name, :network, :day, :rating, :season 
-  
   def self.highest_rating 
     self.maximum(:rating)
   end 
